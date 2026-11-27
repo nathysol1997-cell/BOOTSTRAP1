@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        .navbar {
+            padding: 15px 5%;
+            box-shadow: 0 2px 6px #ddd;
+        }
+
+        .logo {
+            color: #00754a;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #222;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            color: #00754a;
+        }
+
+        .hero {
+            background-color: #006241;
+            color: white;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .custom-btn {
+            border: 1px solid white;
+            color: white;
+            border-radius: 30px;
+            padding: 9px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .custom-btn:hover {
+            background-color: white;
+            color: #006241;
+        }
+
+        .promo {
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+
+        .promo img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .promo-text {
+            background-color: #f1f8f5;
+            padding: 35px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .promo-text h2 {
+            color: #006241;
+            font-weight: bold;
+        }
+
+        .green-btn {
+            border: 1px solid #006241;
+            color: #006241;
+            border-radius: 30px;
+            padding: 8px 22px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .green-btn:hover {
+            background-color: #006241;
+            color: white;
+        }
+
+        footer {
+            background-color: #f7f7f7;
+            padding: 40px 5%;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        footer a:hover {
+            color: #00754a;
+        }
+
+        @media (max-width: 768px) {
+            .hero img {
+                height: 280px;
+            }
+
+            .hero-text {
+                padding: 35px 20px;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            .promo img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="Home-index.html">STARBUCKS</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav me-auto ms-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home-index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex gap-3 align-items-center">
+                    <a href="#" class="nav-link">Find a Store</a>
+                    <a href="#" class="btn btn-outline-dark rounded-pill">Sign in</a>
+                    <a href="#" class="btn btn-dark rounded-pill">Join now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid mt-4">
+        <div class="row hero">
+            <div class="col-md-6 p-0">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=1000" alt="Iced coffee">
+            </div>
+
+            <div class="col-md-6 hero-text">
+                <h1>GOOD COFFEE. GOOD DAYS.</h1>
+                <p class="mt-3">Discover your favorite coffee and enjoy every moment with Starbucks.</p>
+                <a href="menu.html" class="custom-btn">Explore our menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container promo">
+        <div class="row">
+            <div class="col-md-6 p-0">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=1000" alt="Hot coffee">
+            </div>
+
+            <div class="col-md-6 promo-text">
+                <h2>YOUR COFFEE, YOUR WAY</h2>
+                <p>From rich espresso to smooth iced coffee, there is something for everyone.</p>
+                <a href="menu.html" class="green-btn">Discover more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container promo">
+        <div class="row">
+            <div class="col-md-6 promo-text">
+                <h2>MAKE IT A MOMENT</h2>
+                <p>Take a break, relax, and enjoy your favorite Starbucks drink with friends.</p>
+                <a href="menu.html" class="green-btn">View drinks</a>
+            </div>
+
+            <div class="col-md-6 p-0">
+                <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1000" alt="Coffee shop">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <h5>About Us</h5>
+                <a href="#">Our Company</a>
+                <a href="#">Our Coffee</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h5>Customer Service</h5>
+                <a href="#">FAQs</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h5>Quick Links</h5>
+                <a href="Home-index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="#">Find a Store</a>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h5>Starbucks</h5>
+                <p>Good coffee brings people together.</p>
+            </div>
+        </div>
+
+        <hr>
+        <p class="text-center mb-0">© 2026 Starbucks Coffee Company</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
